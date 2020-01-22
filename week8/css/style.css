@@ -7,15 +7,8 @@
 	max-width: 100vw;
 }
 
-.screenshot {
-	width: 100%;
-	padding-bottom:3em;
-	padding-top:1em;
-}
-
 header {
 	background-color: #195918;
-	display: block;
 }
 
 body {	
