@@ -45,13 +45,6 @@ p {
 	align-items:center;
 }
 
-header > a:first-of-type {
-	width: 20%;
-	display: inline-block;
-	margin: auto;
-	position: relative;
-}
-
 .our_rate {
 	display: block; 
 	border: 1px solid #ce1a01; 
@@ -68,20 +61,20 @@ nav > div.cirkel {
 	display: flex;
 }
 
-span:first-of-type {
-	height: .3rem; 
-	width: 100%; 
-	display: block; 
-	background-color:white;
-	border-radius: 3px;
-}
-
+/* Brede lijn bovenin de header */
 header > span:first-of-type{
 	position: absolute;
 	height: 1px;
 	width: 78vw;
 	margin-left:11vw;
 	background-color: #316A30;
+}
+
+span:first-of-type {
+	width: 3em;
+	height: .3em; 
+	display: block; 
+	background-color:#195918;
 }
 
 /*span:first-of-type::before, span:first-of-type::after {
@@ -216,6 +209,32 @@ main > section > article:nth-of-type(2) > h3 {
 	margin-top:1em;
 }
 
+main > section > article:nth-of-type(2) > ul > li {
+	width: 24em;
+	display: inline-block;
+	margin-bottom: 2em;
+}
+
+main > section > article:nth-of-type(2) > ul > li > img {
+	width: 4em;
+	margin: 0;
+}
+
+main > section > article:nth-of-type(2) > ul > li > h4 {
+	font-weight: bold;
+	display: inline;
+	position:absolute;
+	margin-top: -.1em;
+}
+
+main > section > article:nth-of-type(2) > ul > li > p {
+	color: #9a9a9a;
+	font-size: .9em;
+	margin-left: 5.5em;
+	line-height: 1.7em;
+	margin-top: -2em;
+}
+
 h4 {
 	color:black;
 	font-weight: bold;
@@ -313,6 +332,54 @@ form {
     border-color: #f90;
 }
 
+/* BESTEMMINGEN */
+
+main > section:nth-of-type(3) > span:first-of-type {
+	width: 3em;
+	height: .3em;
+	background-color: #195918;
+	border-radius: 0;
+	margin: auto;
+	margin-top: 1em;
+}
+
+main > section:nth-of-type(3) > span:last-of-type {
+	width: 12em;
+	height: .3em;
+	border-radius: 0;
+	margin: auto;
+	margin-top: 1em;
+	border-bottom: 10px solid #dedede;
+}
+
+main > section:nth-of-type(3) > p {
+	text-align: center;
+	font-family: Kaushan Script;
+	margin-top: 5em;
+	margin-bottom: .5em;
+}
+
+.bestemmingen {
+	margin-top:3em;
+	display: flex;
+	justify-content: space-around;
+}
+
+.bestemmingen > figure > img {
+	width: 16.5em;
+	border-radius: 5px;
+}
+
+.bestemmingen > figure > figcaption {
+	color: white;
+	font-size: 1.3em;
+	font-weight: 1000;
+	display: block;
+	text-align: center;
+	margin-top: -2.5em;
+	text-shadow: 1px 1px 2px #696969;
+}
+
 /* FOOTER STYLING */
 
 footer {
@@ -384,7 +451,7 @@ footer > section:first-of-type > form > input[type="submit"] {
 /* FOOTER LINKJES ETC */
 
 footer > section:last-of-type{
-	margin-left: 15em;
+	margin-left: 10em;
 }
 
 footer > section:last-of-type > ul {
@@ -403,7 +470,24 @@ footer > section:last-of-type > ul > p {
 	color: white;
 }
 
-footer > section:last-of-type > ul > li {
+footer > section:last-of-type > ul:nth-of-type(2) {
+	margin-left: -2em;
+}
+
+footer > section:last-of-type > ul:nth-of-type(3) {
+	margin-left:6em;
+}
+
+footer > section:last-of-type > ul:last-of-type {
+	margin-left: 3em;
+}
+
+footer > section:last-of-type > ul:last-of-type > li:nth-of-type(2) > p {
+	display: inline;
+	margin-left: 2em;
+}
+
+/*footer > section:last-of-type > ul > li {
   	position: relative;
   	padding-left:-.4em;
 }
@@ -415,7 +499,7 @@ footer > section:last-of-type > ul:nth-last-child(n+2) > li:before{
   	position: absolute;
   	text-decoration: none;
   	left: -.1em;
-}
+}*/
 
 footer > section:last-of-type > ul > li > p {
 	color: white;
@@ -428,14 +512,7 @@ footer > section:last-of-type > ul > li > a {
 
 footer > section:last-of-type > ul:last-of-type > li:last-of-type {
 	width: 5em;
-}
-
-.kaushan {
-	text-align: center;
-	margin-bottom: 10px;
-	padding-top:1em;
-    font-family: 'Kaushan Script';
-    font-size: 1.200em;
+	margin-left: -2em;
 }
 
 i {
@@ -448,9 +525,26 @@ i {
     font-size: 1.2em;
     text-align: center;
     vertical-align: center;
-    padding-top: .5em;
+    padding-top: .4em;
     margin: .3em;
-}    
+    margin-left: -2.2em;
+}   
+
+footer > section:last-of-type > ul:nth-last-child(n+2) > li > i {
+	font-size: .6em;
+	padding-top: .5em;
+} 
+
+footer > section:last-of-type > ul:last-of-type > li:nth-of-type(2) > p > i {
+	margin-top: .2em;
+	margin-left: -1.5em;
+	margin-right: -.5em;
+	color:white;
+	border: none;
+	border-radius: 0;
+	background:initial;
+	font-size: 1.8em;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -550,53 +644,6 @@ main > blockquote > p {
 	margin-top: 1em; 
 }
 
-/* BESTEMMINGEN */
-
-main > section:nth-of-type(3) > span:first-of-type {
-	width: 3em;
-	height: .3em;
-	background-color: #195918;
-	border-radius: 0;
-	margin: auto;
-	margin-top: 1em;
-}
-
-main > section:nth-of-type(3) > span:last-of-type {
-	width: 12em;
-	height: .3em;
-	border-radius: 0;
-	margin: auto;
-	margin-top: 1em;
-	border-bottom: 10px solid #dedede;
-}
-
-main > section:nth-of-type(3) > p {
-	text-align: center;
-	font-family: Kaushan Script;
-	margin-top: 5em;
-	margin-bottom: .5em;
-}
-
-.bestemmingen {
-	margin-top:3em;
-	display: flex;
-	justify-content: space-around;
-}
-
-.bestemmingen > figure > img {
-	width: 16.5em;
-	border-radius: 5px;
-}
-
-.bestemmingen > figure > figcaption {
-	color: white;
-	font-size: 1.3em;
-	font-weight: 1000;
-	display: block;
-	text-align: center;
-	margin-top: -2.5em;
-	text-shadow: 1px 1px 2px #696969;
-}
 
 /* BLOG-ARTIKEL */
 
@@ -664,22 +711,19 @@ main > section:last-of-type > article > input:hover {
 	background: rgba(25,89,24,1);
 }
 
-/* RECENSIES */
+/* RONDREIS BEOORDELINGEN */
 
 aside {
 	width: 38vw;
 	float: right;
-	margin-top:-28.5em;
+	margin-top:-27.8em;
 }
 
 aside > h3 {
 	font-size: 1.8em;
-	margin-top: .5em;
 }
 
 aside > span {
-	width: 3em;
-	height: .3em;
 	background-color: #195918;
 	border-radius: 0;
 	margin: auto;
@@ -714,7 +758,6 @@ aside > article > figure > figcaption > p {
 
 aside > article {
 	margin:0;
-	margin-top
 	padding:0;
 	margin-left: 3.5em;
 	background-color: #f6f6f6;
@@ -724,6 +767,7 @@ aside > article {
 }
 
 aside > article:first-of-type{
+	width: 35vw;
 	background-color: unset;
 	border: none;
 	margin-top: -1em;
@@ -751,15 +795,15 @@ aside > article > p > img {
 aside > article > a {
 	text-decoration: none;
 	color: #4090E5;
-}
-
-
-
-aside > article > a {
 	padding-left: 3em;
 }
 
-
+aside > a:last-of-type {
+	text-decoration: none;
+	color: #4090E5;
+	margin: 0;
+	margin-top: 10em;
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
